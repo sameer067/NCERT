@@ -29,7 +29,7 @@ def embed_and_store(chunks, persist_directory="db"):
         persist_directory=persist_directory
     )
 
-    print(f"[✓] Stored {len(chunks)} chunks in vector DB.")
+    print(f"Stored {len(chunks)} chunks in vector DB.")
 
 
 # if __name__ == "__main__":
@@ -39,8 +39,8 @@ def embed_and_store(chunks, persist_directory="db"):
 #     if not os.path.exists(pdf_path):
 #         raise FileNotFoundError(f"File not found: {pdf_path}")
 
-#     print("[🔍] Loading and splitting PDF...")
+#     print("Loading and splitting PDF...")
 #     chunks = load_pdf_chunks(pdf_path)
 
-#     print("[💾] Embedding and storing chunks...")
+#     print("Embedding and storing chunks...")
 #     embed_and_store(chunks)    
