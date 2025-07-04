@@ -62,18 +62,18 @@ agent = initialize_agent(
 )
 
 def run_agent():
-    print("📘 NCERT AI Agent Ready!")
+    print("NCERT AI Agent Ready!")
     print("Type your request (or 'exit'):\n")
     while True:
-        user_input = input("🧑‍🎓 You: ")
+        user_input = input("You: ")
         if user_input.lower() in ["exit", "quit"]:
-            print("👋 Exiting the agent. Cleaning up vector store...")
+            print("Exiting the agent. Cleaning up vector store...")
             if os.path.exists("db"):
                 shutil.rmtree("db")
-                print("🧹 Vector store cleaned up!")
+                print("Vector store cleaned up!")
             break
         response = agent.run(user_input)
-        print(f"\n🤖 Agent: {response}\n")
+        print(f"\nAgent: {response}\n")
         
 
 if __name__ == "__main__":

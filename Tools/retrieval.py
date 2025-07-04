@@ -42,8 +42,8 @@ def answer_question(query: str):
     chain = build_lcel_qa_chain(vectordb)
 
     answer = chain.invoke(query)
-    print(f"\n📘 Question: {query}")
-    print(f"\n🤖 Answer: {answer.content}")
+    print(f"\nQuestion: {query}")
+    print(f"\nAnswer: {answer.content}")
 
 # if __name__ == "__main__":
 #     while True:
